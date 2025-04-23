@@ -1,0 +1,409 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI Black;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Wingdings;}{\f3\fnil\fcharset1 Segoe UI Symbol;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs56\lang9              JAVASCRIPT\b0\f1\par
+\fs22  \par
+Question 1: What is JavaScript? Explain the role of JavaScript in web development. \par
+Ans :- JavaScript is a programming language used to create dynamic and interactive web pages. \par
+Role in Web Development: \par
+\f2\'b7\f1  Enhances user experience by enabling interactivity (e.g., animations, form validation). \par
+\f2\'b7\f1  Works with HTML and CSS to build responsive and dynamic web pages. \par
+\f2\'b7\f1  Enables client-side scripting for real-time updates without reloading the page. \par
+\f2\'b7\f1  Used in frameworks (React, Angular, Vue) and backend (Node.js) for full-stack development. \par
+Question 2: How is JavaScript different from other programming languages like Python or Java? \par
+Ans :- JavaScript vs. Python vs. Java \par
+1. Type System \par
+o JavaScript & Python: Dynamically typed \par
+o Java: Statically typed \par
+2. Execution Environment \par
+o JavaScript: Browser & Node.js \par
+o Python: Backend, data science, automation \par
+o Java: JVM, enterprise apps, Android \par
+3. Syntax \par
+o JavaScript & Java: Use \{\} and ; \par
+o Python: Uses indentation \par
+4. Object Model \par
+o JavaScript: Prototype-based \par
+o Python & Java: Class-based \par
+Question 3: Discuss the use of <script> tag in HTML. How can you link an external JavaScript file to an \par
+HTML document? \par
+Ans:-  Use of <script> Tag in HTML \par
+\f2\'b7\f1  The <script> tag is used to include JavaScript code in an HTML document. \par
+\f2\'b7\f1  It can be placed inside the <head> or <body>. \par
+\f2\'b7\f1  JavaScript inside <script> can manipulate HTML, CSS, and handle events. \par
+\f2\'b7\f1  Place it before the closing </body> for better performance. \par
+\f2\'b7\f1  No need to use <script> tags inside the external file. \par
+\f2 v\f1  Variables and Data Types :- \par
+Question 1: What are variables in JavaScript? How do you declare a variable using var, let, and const? \par
+Ans:-  \par
+1. Var :- \par
+\f2\'b7\f1  var (Old method) \par
+\f2\'b7\f1  Function-scoped. \par
+\f2\'b7\f1  Can be redeclared and reassigned. \par
+2. Let :-  \par
+\f2\'b7\f1  Block-scoped. \par
+\f2\'b7\f1  Can be reassigned but not redeclared. \par
+3. Const:- \par
+\f2\'b7\f1  Block-scoped. \par
+\f2\'b7\f1  Cannot be reassigned or redeclared. \par
+Question 2: Explain the different data types in JavaScript. Provide examples for each. \par
+Ans :- There are two types of data types:-  \par
+1. Primitive Type:- \par
+\f2\'b7\f1  Number: Represents numeric values. \par
+        Eg:-  let num = 42; \par
+\f2\'b7\f1  String: Represents sequences of characters. \par
+        Eg:- let name = "John"; \par
+\f2\'b7\f1  Boolean: Represents true or false. \par
+        Eg:-  let isActive = true; \par
+\f2\'b7\f1  Undefined: A variable that has been declared but not assigned a value. \par
+        Eg:-  let a; \par
+                 console.log(a);   \par
+\f2\'b7\f1  Null: Represents the intentional absence of any value. \par
+        Eg:-  let obj = null; \par
+\f2\'b7\f1  Symbol (ES6): A unique and immutable data type used for object properties. \par
+        Eg:- let sym = Symbol('unique'); \par
+\f2\'b7\f1  BigInt (ES11): Represents large integers beyond the Number type limit. \par
+        Eg:- let bigNum = 9007199254740991n; \par
+ \par
+2. Non-primitive type:- \par
+ Object: A collection of properties (key-value pairs) \par
+     Eg:- let person = \{ name: "Alice", age: 30 \}; \par
+Question 3: What is the difference between undefined and null in JavaScript? \par
+Ans:- undefined:  A variable is declared but not assigned a value. \par
+Eg :-  let x; \par
+         console.log(x);  \par
+null:  A variable is explicitly assigned a "no value" state. \par
+Eg:-  let y = null; \par
+         console.log(y);  \par
+ \par
+\f2 v\f1  JavaScript Operators :- \par
+ \par
+Question 1: What are the different types of operators in JavaScript? Explain with examples.   \par
+Arithmetic operators, Assignment operators, Comparison operators, Logical operators. \par
+Ans :- 1. Arithmetic Operators:- + , - , * , / , % , ++ , --. \par
+Eg:- let a = 10, b = 5; \par
+       console.log(a + b); // 15 \par
+        console.log(a % b); // 0 \par
+2. Assignment Operators :-  = , += , -= , *= , /= , %= \par
+ \par
+Eg :- let x = 10; \par
+         x += 5; // x = 15 \par
+         console.log(x); \par
+ \par
+ \par
+ \par
+3. Comparison Operators :- == , === , != , > , < , >= , <= \par
+ \par
+      Eg:-   console.log(10 > 5);  // true \par
+                console.log(5 == "5"); // true (type conversion) \par
+                console.log(5 === "5"); // false (strict comparison) \par
+ \par
+4. Logical Operators :- &&, ` , ! \par
+ \par
+Eg :-  let isAdult = true; \par
+         let hasID = false; \par
+console.log(isAdult && hasID); // false (both must be true) \par
+console.log(isAdult || hasID); // true (at least one is true) \par
+console.log(!isAdult); // false (negation) \par
+Question 2: What is the difference between == and === in JavaScript? \par
+Ans :-  1. == (Loose Equality) :- Converts types before comparison. \par
+Eg:- console.log(5 == "5"); // true (string "5" is converted to number 5) \par
+console.log(true == 1); // true (true is converted to 1) \par
+3. === (Strict Equality) :- Compares both value and type. \par
+Eg:- console.log(5 === "5"); // false (number vs. string) \par
+console.log(true === 1); // false (boolean vs. number) \par
+\f2 v\f1  Control Flow :- \par
+Question 1: What is control flow in JavaScript? Explain how if-else statements work with an example. \par
+Ans :-  Control flow refers to the order in which statements are executed in a program. JavaScript \par
+executes code line by line, but control structures like conditional statements, loops, and functions alter \par
+this flow based on conditions or logic. \par
+if-else Statement in JavaScript \par
+The if-else statement allows decision-making in JavaScript based on conditions. \par
+Eg :- let num = -5; \par
+if (num > 0) \{ \par
+console.log("The number is positive."); \par
+\} else \{ \par
+console.log("The number is negative or zero."); \par
+\} \par
+Question 2: Describe how switch statements work in JavaScript. When should you use a switch \par
+statement instead of if-else? \par
+Ans:- The switch statement is used for decision-making when multiple possible values need to be \par
+checked against a single variable or expression. It provides a cleaner and more readable alternative to \par
+multiple if-else if conditions. \par
+let day = 3; \par
+switch (day) \{ \par
+    case 1: \par
+        console.log("Monday"); \par
+        break; \par
+    case 2: \par
+        console.log("Tuesday"); \par
+        break; \par
+    case 3: \par
+        console.log("Wednesday"); \par
+        break; \par
+    case 4: \par
+        console.log("Thursday"); \par
+        break; \par
+    case 5: \par
+        console.log("Friday"); \par
+        break; \par
+    case 6: \par
+    case 7: \par
+        console.log("Weekend!"); \par
+        break; \par
+    default: \par
+console.log("Invalid day"); \par
+\} \par
+Example: When to Use if-else Instead \par
+If checking a range (not a fixed value), use if-else: \par
+let age = 18; \par
+if (age < 12) \{ \par
+console.log("Child"); \par
+\} else if (age < 18) \{ \par
+console.log("Teen"); \par
+\} else \{ \par
+console.log("Adult"); \par
+\} \par
+\f2 v\f1  Loops (For, While, Do-While) :-  \par
+Question 1: Explain the different types of loops in JavaScript (for, while, do-while). Provide a basic \par
+example of each. \par
+Ans:-  1. for Loop \par
+Used when we know how many times we want to execute the loop. \par
+Eg:-  for (let i = 1; i <= 5; i++) \{ \par
+console.log(i); \par
+\} \par
+2. while Loop \par
+Used when the number of iterations is unknown, and we repeat until a condition becomes false. \par
+Eg:- let i = 1; \par
+while (i <= 5) \{ \par
+console.log(i); \par
+i++; \par
+\} \par
+3. do-while Loop \par
+Similar to while, but executes at least once, even if the condition is false. \par
+Eg:- let i = 1; \par
+do \{ \par
+console.log(i); \par
+i++; \par
+\} while (i <= 5); \par
+Question 2: What is the difference between a while loop and a do-while loop? \par
+Ans:-  while Loop :-  \par
+let i = 5; \par
+while (i < 5) \{ \par
+console.log("This will not run"); \par
+\} \par
+do-while Loop :-  \par
+let i = 5; \par
+do \{ \par
+console.log("This will run at least once"); \par
+\} while (i < 5); \par
+\f2 v\f1  Functions :-  \par
+Question 1: What are functions in JavaScript? Explain the syntax for declaring and calling a function. \par
+Ans:- A function is a reusable block of code that performs a specific task. Functions help in code  \par
+reusability, modularity, and better readability. \par
+Eg:-    function addNumbers(a, b) \{  // Function declaration \par
+return a + b;            \par
+\} \par
+// Returns the sum \par
+let sum = addNumbers(5, 3);  // Function call \par
+console.log(sum);            \par
+// Output: 8 \par
+Question 2: What is the difference between a function declaration and a function expression?  \par
+Ans:-  \par
+Declaration is hoisted, so it can be called before it's defined. \par
+Expression is not hoisted, so it must be defined before calling \par
+Function Declaration (Hoisted) :-  \par
+greet(); //  \par
+function greet() \{ \par
+console.log("Hello"); \par
+\} \par
+Function Expression (Not Hoisted) :-  \par
+greet(); // \f3\u10060?\f1  Error: Cannot access 'greet' before initialization \par
+let greet = function() \{ \par
+console.log("Hello"); \par
+\}; \par
+Question 3: Discuss the concept of parameters and return values in functions. \par
+Ans :-  1. Parameters in Functions \par
+Parameters are variables used to pass information into a function. They act as placeholders for values \par
+you provide when calling the function. \par
+function add(a, b) \{ \par
+return a + b; \par
+\} \par
+add(5, 3);   \par
+2. Return Values in Functions:-   A return value is the output the function gives back after performing its \par
+task. It can be used in other parts of the program. \par
+function add(a, b) \{ \par
+return a + b; \par
+\} \par
+let result = add(5, 3); \par
+console.log(result); // Output: 8 \par
+\f2 v\f1  Arrays :-  \par
+Question 1: What is an array in JavaScript? How do you declare and initialize an array?  \par
+Ans:- An array in JavaScript is a special variable that can hold multiple values at once. Arrays are ordered \par
+lists that can store elements of any data type (numbers, strings, objects, etc.). \par
+1. Declaring an Array :- \par
+You declare an array using square brackets []. \par
+Eg:- let arr = [];  // Empty array. \par
+2. Initializing an Array :-  \par
+You can initialize an array with values inside the square brackets, separated by commas. \par
+Eg:- let fruits = ["Apple", "Banana", "Cherry"];   \par
+let numbers = [1, 2, 3, 4, 5];   \par
+Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays. \par
+Ans:-  1. push() Method :-  \par
+\f2\'b7\f1  Purpose: Adds one or more elements to the end of an array. \par
+\f2\'b7\f1  Returns: The new length of the array. \par
+let fruits = ["Apple", "Banana"]; \par
+fruits.push("Cherry", "Date");  // Adds 'Cherry' and 'Date' at the end \par
+console.log(fruits);  // Output: ["Apple", "Banana", "Cherry", "Date"] \par
+2. pop() Method :-  \par
+\f2\'b7\f1  Purpose: Removes the last element from an array. \par
+\f2\'b7\f1  Returns: The removed element. \par
+let fruits = ["Apple", "Banana", "Cherry"]; \par
+let removedFruit = fruits.pop();  // Removes 'Cherry' \par
+console.log(fruits);  // Output: ["Apple", "Banana"] \par
+console.log(removedFruit);  // Output: "Cherry" \par
+3. shift() Method :-  \par
+\f2\'b7\f1  Purpose: Removes the first element from an array. \par
+\f2\'b7\f1  Returns: The removed element. \par
+let fruits = ["Apple", "Banana", "Cherry"]; \par
+let removedFruit = fruits.shift();  // Removes 'Apple' \par
+console.log(fruits);  // Output: ["Banana", "Cherry"] \par
+console.log(removedFruit);  // Output: "Apple" \par
+4. unshift() Method :-  \par
+\f2\'b7\f1  Purpose: Adds one or more elements to the beginning of an array. \par
+\f2\'b7\f1  Returns: The new length of the array. \par
+let fruits = ["Banana", "Cherry"]; \par
+fruits.unshift("Apple", "Mango");  // Adds 'Apple' and 'Mango' at the beginning \par
+console.log(fruits);  // Output: ["Apple", "Mango", "Banana", "Cherry"] \par
+\f2 v\f1  Objects:-  \par
+Question 1: What is an object in JavaScript? How are objects different from arrays? \par
+Ans:-  Object: A collection of key-value pairs. Keys are strings (or numbers), and values can be any data \par
+type. \par
+Eg:-  let person = \{ name: "Alice", age: 25 \}; \par
+Array: An ordered list of elements indexed by numbers. \par
+Eg:- let fruits = ["Apple", "Banana"]; \par
+Question 2: Explain how to access and update object properties using dot notation and bracket \par
+notation. \par
+Ans:-  Dot Notation: \par
+\f2\'b7\f1  Access: object.property \par
+\f2\'b7\f1  Update: object.property = value \par
+Eg:- person.name = "Bob"; \par
+Bracket Notation: \par
+\f2\'b7\f1  Access: object["property"] \par
+\f2\'b7\f1  Update: object["property"] = value \par
+Eg:- person["age"] = 30; \par
+\f2 v\f1  JavaScript Events :-  \par
+Question 1: What are JavaScript events? Explain the role of event listeners. \par
+Ans:-  JavaScript events are actions or occurrences that happen in the browser, such as a user clicking a \par
+button, submitting a form, or resizing a window. \par
+Adding an Event Listener: Use addEventListener() to bind a function to an event. \par
+Eg:- button.addEventListener("click", function() \{ \par
+alert("Button clicked!"); \par
+\}); \par
+Common Events: click, mouseover, keydown, submit, etc. \par
+Question 2: How does the addEventListener() method work in JavaScript? Provide an example. \par
+Ans:-  addEventListener()  \par
+The addEventListener() method is used to attach an event handler to a specific event on an element. It \par
+listens for a particular event and executes a callback function when the event occurs. \par
+Eg:- element.addEventListener(event, function, useCapture); \par
+\f2\'b7\f1  event: The type of event (e.g., click, mouseover). \par
+\f2\'b7\f1  function: The function to be executed when the event is triggered. \par
+\f2\'b7\f1  useCapture: Optional. Determines if the event should be captured during the capturing phase \par
+(default is false). \par
+Eg:- let button = document.getElementById("myButton"); \par
+button.addEventListener("click", function() \{ \par
+alert("Button clicked!"); \par
+\}); \par
+Explanation: When the button with the ID myButton is clicked, the alert will pop up. \par
+\f2 v\f1  DOM Manupulation :-  \par
+Question 1: What is the DOM (Document Object Model) in JavaScript? How does JavaScript interact \par
+with the DOM? \par
+Ans:-  The DOM is a programming interface for web documents. It represents the document as a tree \par
+structure where each node is an object representing a part of the page, such as elements, attributes, \par
+and text. \par
+How JavaScript Interacts with the DOM: \par
+JavaScript can access, modify, and manipulate the DOM using methods and properties like: \par
+\f2\'b7\f1  Accessing elements: document.getElementById(), document.querySelector() \par
+\f2\'b7\f1  Modifying content: element.innerHTML, element.textContent \par
+\f2\'b7\f1  Changing styles: element.style.property \par
+\f2\'b7\f1  Adding/removing elements: element.appendChild(), element.removeChild() \par
+let para = document.getElementById("myPara"); \par
+para.textContent = "Hello, World!";  // Changes text content of the paragraph. \par
+Question 2: Explain the methods getElementById(), getElementsByClassName(), and querySelector() \par
+used to select elements from the DOM. \par
+1. getElementById() \par
+\f2\'b7\f1  Purpose: Selects a single element by its ID. \par
+\f2\'b7\f1  Returns: The first element with the matching ID (or null if not found). \par
+Eg:- let element = document.getElementById("myElement"); \par
+2. getElementsByClassName() \par
+\f2\'b7\f1  Purpose: Selects all elements with the specified class name. \par
+\f2\'b7\f1  Returns: A HTMLCollection of elements. \par
+Eg:- let elements = document.getElementsByClassName("myClass"); \par
+3. querySelector() \par
+\f2\'b7\f1  Purpose: Selects the first element that matches a CSS selector. \par
+\f2\'b7\f1  Returns: The first matching element (or null if not found). \par
+Eg:- let element = document.querySelector(".myClass");  // Selects the first element with class \par
+"myClass". \par
+\f2 v\f1  JavaScript Timing Events (setTimeout, setInterval):- \par
+Question 1: Explain the setTimeout() and setInterval() functions in JavaScript. How are they used for \par
+timing events? \par
+Ans:- 1. setTimeout() \par
+1.Purpose: Executes a function after a specified delay (in milliseconds). \par
+Eg:-  setTimeout(function, delay); \par
+2.Use: Runs the function once after the given time interval. \par
+Eg:-   setTimeout(function() \{ \par
+alert("This message appears after 3 seconds"); \par
+\}, 3000);  // 3000 milliseconds = 3 seconds \par
+ \par
+2. setInterval() \par
+    1.Purpose: Executes a function at regular intervals (in milliseconds). \par
+                     Eg:-     setInterval(function, interval); \par
+    2. Use: Runs the function repeatedly after every specified interval. \par
+Eg:-   setInterval(function() \{ \par
+               console.log("This message repeats every 2 seconds"); \par
+\}, 2000);  // 2000 milliseconds = 2 seconds \par
+ \par
+Question 2: Provide an example of how to use setTimeout() to delay an action by 2 seconds. \par
+Ans:-  Eg:- setTimeout(function() \{ \par
+                           console.log("This message appears after 2 seconds"); \par
+                    \}, 2000);  // 2000 milliseconds = 2 seconds. \par
+ \par
+ \par
+\f2 v\f1  JavaScript Error Handling:- \par
+Question 1: What is error handling in JavaScript? Explain the try, catch, and finally blocks with an \par
+example. \par
+Ans:-  Error handling in JavaScript allows you to manage errors in your code without stopping the entire \par
+program. The try, catch, and finally blocks are used to handle exceptions. \par
+1. try Block \par
+\f2\'b7\f1  Purpose: Contains code that might throw an error. \par
+2. catch Block \par
+\f2\'b7\f1  Purpose: Catches and handles the error if one occurs in the try block. \par
+3. finally Block \par
+\f2\'b7\f1  Purpose: Executes code after the try and catch blocks, regardless of whether an error occurred \par
+or not. \par
+try \{ \par
+let result = 10 / 0;  // This will cause Infinity, not an error \par
+console.log(result); \par
+\} catch (error) \{ \par
+console.log("An error occurred:", error.message);  // Catching any error \par
+\} finally \{ \par
+console.log("This will run regardless of error");  // Always runs \par
+\} \par
+Question 2: Why is error handling important in JavaScript applications? \par
+Ans:-  \par
+1. Prevents Application Crashes: \par
+\f2\'b7\f1  Proper error handling ensures that an error doesn't crash the entire application. Without it, \par
+uncaught errors can stop your application unexpectedly. \par
+2. Improves User Experience: \par
+\f2\'b7\f1  Instead of a blank page or a broken feature, users see informative messages, helping them \par
+understand what's wrong without disrupting their experience. \par
+3.  Debugging: \par
+\f2\'b7\f1  Error handling allows developers to catch and log errors, making it easier to identify and fix \par
+issues during development or in production. \par
+4. Graceful Degradation: \par
+\f2\'b7\f1  When an error occurs, the application can continue running, or fallback behavior can be \par
+triggered, preventing critical failures. \par
+5. Security: \par
+\f2\'b7\f1  Proper handling prevents sensitive error details from being exposed to end-users, which could \par
+potentially be exploited. \par
+}
+ 

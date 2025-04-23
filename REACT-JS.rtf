@@ -1,0 +1,167 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial Black;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Wingdings;}{\f3\fnil Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs40\lang9\par
+                     REACT-JS\fs22\par
+\b0\f1\par
+\par
+\fs28 Introduction :- \par
+Question 1: What is React.js? How is it different from other JavaScript frameworks and libraries? \par
+Ans :- \par
+\f2\'b7\f1  A JavaScript library for building user interfaces. \par
+\f2\'b7\f1  Developed by Meta (Facebook). \par
+\f2\'b7\f1  Used for single-page applications (SPAs). \par
+\f2\'b7\f1  Works with a virtual DOM for fast updates. \par
+\f2\'b7\f1  Uses component-based architecture for reusability. \par
+Question 2: Explain the core principles of React such as the virtual DOM and component based \par
+architecture. \par
+Ans :- \par
+1.Virtual DOM (VDOM) \par
+\f2\'b7\f1  React uses a Virtual DOM, which is a lightweight copy of the real DOM. \par
+\f2\'b7\f1  It updates only the changed parts instead of re-rendering the entire UI. \par
+\f2\'b7\f1  Improves performance by minimizing direct DOM manipulations. \par
+2.Component-Based Architecture \par
+\f2\'b7\f1  UI is built using independent, reusable components. \par
+\f2\'b7\f1  Each component has its own state and logic. \par
+\f2\'b7\f1  Makes development modular, scalable, and easier to maintain. \par
+3.One-Way Data Binding \par
+\f2\'b7\f1  Data flows in one direction (from parent to child components). \par
+\f2\'b7\f1  Ensures better control over data and prevents unexpected changes. \par
+4.Declarative UI \par
+\f2\'b7\f1  React describes what the UI should look like, not how to update it. \par
+\f2\'b7\f1  Makes code easier to read, debug, and manage. \par
+5. State Management \par
+\f2\'b7\f1  Uses useState, useReducer, or tools like Redux for managing component state. \par
+\f2\'b7\f1  Helps in handling dynamic data efficiently. \par
+Question 3: What are the advantages of using React.js in web development? \par
+Ans :-  \par
+1. Fast Performance \par
+\f2\'b7\f1  Uses Virtual DOM for efficient rendering. \par
+\f2\'b7\f1  Updates only the changed parts instead of reloading the entire page. \par
+2. Component-Based Architecture \par
+\f2\'b7\f1  UI is built with reusable components. \par
+\f2\'b7\f1  Makes code modular, maintainable, and scalable. \par
+3. One-Way Data Binding \par
+\f2\'b7\f1  Ensures better control over data flow. \par
+\f2\'b7\f1  Prevents unwanted UI changes and improves debugging. \par
+4. Declarative UI \par
+\f2\'b7\f1  React updates UI automatically when state changes. \par
+\f2\'b7\f1  Code is easier to read, understand, and debug. \par
+5. Rich Ecosystem & Community Support \par
+\f2\'b7\f1  Large community with many third-party libraries. \par
+\f2\'b7\f1  Constant updates and improvements. \par
+6. Easy Integration \par
+\f2\'b7\f1  Can be used with other frameworks (Angular, Vue, etc.). \par
+\f2\'b7\f1  Works well with backend technologies like Node.js. \par
+7. SEO-Friendly \par
+\f2\'b7\f1  Faster page load time improves SEO ranking. \par
+\f2\'b7\f1  Can be used with Next.js for server-side rendering (SSR). \par
+8. Mobile App Development with React Native \par
+\f2\'b7\f1  Code can be reused for mobile apps using React Native. \par
+\f2\'b7\f1  Saves development time and effort. \par
+JSX (JavaScript XML) :- \par
+Question 1: What is JSX in React.js? Why is it used? \par
+Ans :-  JSX (JavaScript XML) is a syntax extension for JavaScript that allows writing HTML-like code inside \par
+JavaScript. It makes React components easier to read and write. \par
+Why is JSX Used? \par
+Readable & Clean Code \f3\endash  Looks like HTML, making UI structure clear. \par
+Mixes HTML & JavaScript \endash  Allows inserting JavaScript expressions inside \{\}. \par
+Better Performance \endash  Compiles to optimized JavaScript (React.createElement). \par
+Prevents Security Risks \endash  Escapes harmful inputs to prevent XSS attacks. \par
+Component-Based UI \endash  Simplifies building and managing UI components. \par
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript inside JSX? \par
+Ans :- 1. Syntax: JSX looks like HTML inside JavaScript, while regular JS follows pure JS syntax. \par
+2. Usage: JSX is used in React for UI components, whereas JS is used for logic. \par
+3. Compilation: JSX is converted into React.createElement(), while JS runs directly in the    \par
+browser. \par
+4. Attributes: JSX uses className instead of class for styling. \par
+5. Readability: JSX makes UI code cleaner and more readable. \par
+Question 3: Discuss the importance of using curly braces \{\} in JSX expressions. \par
+Ans:-  \par
+1. Embeds JavaScript Inside JSX \par
+\f2\'b7\f1  Allows inserting variables, functions, and expressions in JSX. \par
+\f2\'b7\f1  Eg:-  \par
+const name = "Avani"; \par
+<h2>Hello, \{name\}!</h2>; \par
+2. Supports Dynamic Rendering \par
+\f2\'b7\f1  You can use conditions, loops, and calculations inside \{\}. \par
+\f2\'b7\f1  Eg:-  \par
+const age = 23; \par
+<p>\{age >= 18 ? "Adult" : "Minor"\}</p>; \par
+3. Works with Functions \par
+\f2\'b7\f1  Calls functions inside JSX for dynamic content. \par
+\f2\'b7\f1  Eg:- \par
+function getGreeting() \{ \par
+return "Welcome to React!"; \par
+\} \par
+<h2>\{getGreeting()\}</h2>; \par
+4. Allows Inline Styling \par
+\f2\'b7\f1  Uses \{\} to pass JavaScript objects for styling. \par
+\f2\'b7\f1  Eg:- \par
+<h2 style=\{\{ color: "blue", fontSize: "20px" \}\}>Hello!</h2>; \par
+Components (Functional & Class Components) :- \par
+Question 1: What are components in React? Explain the difference between functional components and \par
+class components. \par
+Ans:- 1.Components :- \par
+1.Reusable UI blocks \f3\endash  Components help break down a UI into smaller, manageable parts. \par
+2. Two types \endash  React has functional and class components. \par
+3. Returns JSX \endash  Components return JSX (HTML-like syntax). \par
+4. Modular & Maintainable \endash  Makes the code structured and easy to debug. \par
+5. Used to Build UI \endash  React apps consist of multiple components working together. \par
+ \par
+2.How is JSX different from Regular JavaScript? \par
+                1.JSX looks like HTML but works inside JavaScript. \par
+                2. JSX is used in React, whereas JavaScript is standalone. \par
+                3. JSX requires \{\} for inserting JavaScript expressions. \par
+                4. JSX uses className instead of class for styling. \par
+                5. JSX needs Babel to convert it into React.createElement() calls. \par
+        3. Can You Write JavaScript Inside JSX? \par
+1. Embeds JavaScript \endash  Allows using variables, functions, and expressions inside JSX. \par
+2. Enables Dynamic Content \endash  Supports conditions, loops, and calculations. \par
+3. Calls Functions \endash  Functions can be executed inside JSX. \par
+4. Allows Inline Styling \endash  CSS styles can be applied using objects inside \{\}. \par
+5. Makes JSX More Powerful \endash  \{\} adds flexibility to React components. \par
+Question 2: How do you pass data to a component using props? \par
+Ans:- \par
+1. Props (short for "properties") are used to pass data from a parent component to a child \par
+component. \par
+2. Props are read-only (immutable) and cannot be modified by the child component. \par
+3. Props are passed as attributes in the component tag. \par
+4. The child component receives props as a parameter. \par
+5. Props help make components reusable and dynamic. \par
+Question 3: What is the role of render() in class components? \par
+Ans :-  \par
+\f2\'b7\f1  Required in Class Components \f3\endash  Every class component must have a render() method. \par
+\f2\'b7\f1  Returns JSX \f3\endash  It returns the UI (JSX) that will be displayed on the screen. \par
+\f2\'b7\f1  Runs Automatically \f3\endash  React calls render() when the component is first loaded and when \par
+state/props change. \par
+\f2\'b7\f1  Cannot Modify State \f3\endash  The render() method should not directly update the component\rquote s state. \par
+\f2\'b7\f1  Pure Function \f3\endash  It should return the same UI for the same state/props. \par
+ \par
+Props and State :- \par
+Question 1: What are props in React.js? How are props different from state? \par
+Ans :-  \par
+1. Definition \endash  Props (short for "properties") are used to pass data from a parent component to a \par
+child component. \par
+2. Read-Only \endash  Props cannot be modified by the child component. \par
+3. Passed as Attributes \endash  Props are passed as attributes when using a component. \par
+4. Makes Components Reusable \endash  Props allow components to be dynamic and reusable. \par
+Question 2: Explain the concept of state in React and how it is used to manage component data. \par
+Ans :- \par
+Definition \endash  State is an object in React that holds dynamic data and controls a component\rquote s \par
+behavior. \par
+Managed Inside Component \endash  Unlike props, state is controlled and updated within the \par
+component. \par
+Changes Trigger Re-rendering \endash  When the state updates, React automatically re-renders the \par
+component. \par
+Use in Functional Components \endash  Managed using the useState hook in functional components. \par
+Use in Class Components \endash  Managed using this.state and updated with this.setState in class \par
+components. \par
+Question 3: Why is this.setState() used in class components, and how does it work? \par
+Ans :-  \par
+Updates Component State \endash  this.setState() is the only way to update state in class components. \par
+Triggers Re-render \endash  When state changes, React automatically re-renders the component. \par
+Ensures Batch Updates \endash  React groups multiple setState() calls to optimize performance. \par
+Does Not Mutate State Directly \endash  Direct state modification (this.state.value = newValue) does \par
+not trigger re-rendering.\f1\par
+}
+ 
